@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:padding="@dimen/common_10"
+                            android:text="学期"
+                            android:textColor="@color/jwgl_tv2_color"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <TextView
+                            android:id="@+id/teachingdesigndetails_term_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.0"
+                            android:background="@color/white"
+                            android:text="2016第一学期"
+                            android:padding="@dimen/common_10"
+                            android:textColor="@color/jwgl_tv3_color"
+                            android:textSize="@dimen/textSize_14" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/login_line_bg" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:padding="@dimen/common_10"
+                            android:text="课程"
+                            android:textColor="@color/jwgl_tv2_color"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <TextView
+                            android:id="@+id/teachingdesigndetails_kc_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.0"
+                            android:background="@color/white"
+                            android:text="应用电子"
+                            android:padding="@dimen/common_10"
+                            android:textColor="@color/jwgl_tv3_color"
+                            android:textSize="@dimen/textSize_14" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/login_line_bg" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:padding="@dimen/common_10"
+                            android:text="周次"
+                            android:textColor="@color/jwgl_tv2_color"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <TextView
+                            android:id="@+id/teachingdesigndetails_zc_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.0"
+                            android:background="@color/white"
+                            android:text="12周"
+                            android:padding="@dimen/common_10"
+                            android:textColor="@color/jwgl_tv3_color"
+                            android:textSize="@dimen/textSize_14" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/login_line_bg" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:padding="@dimen/common_10"
+                            android:text="星期"
+                            android:textColor="@color/jwgl_tv2_color"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <TextView
+                            android:id="@+id/teachingdesigndetails_xq_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.0"
+                            android:background="@color/white"
+                            android:text="星期一"
+                            android:padding="@dimen/common_10"
+                            android:textColor="@color/jwgl_tv3_color"
+                            android:textSize="@dimen/textSize_14" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/login_line_bg" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:padding="@dimen/common_10"
+                            android:text="节次"
+                            android:textColor="@color/jwgl_tv2_color"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <TextView
+                            android:id="@+id/teachingdesigndetails_jc_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.0"
+                            android:background="@color/white"
+                            android:text="3节"
+                            android:padding="@dimen/common_10"
+                            android:textColor="@color/jwgl_tv3_color"
+                            android:textSize="@dimen/textSize_14" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/common_5"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:padding="@dimen/common_10"
+                            android:text="类型"
+                            android:textColor="@color/jwgl_tv2_color"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <TextView
+                            android:id="@+id/teachingdesigndetails_type_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.0"
+                            android:background="@color/white"
+                            android:text="代课"
+                            android:padding="@dimen/common_10"
+                            android:textColor="@color/jwgl_tv3_color"
+                            android:textSize="@dimen/textSize_14" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/login_line_bg" />
+                    <LinearLayout
+                        android:id="@+id/teachingdesigndetails_dkcontent_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:padding="@dimen/common_10"
+                            android:text="代课教师"
+                            android:textColor="@color/jwgl_tv2_color"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <TextView
+                            android:id="@+id/teachingdesigndetails_dkjs_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.0"
+                            android:background="@color/white"
+                            android:text="李凤"
+                            android:padding="@dimen/common_10"
+                            android:textColor="@color/jwgl_tv3_color"
+                            android:textSize="@dimen/textSize_14" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/teachingdesigndetails_tkcontent_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:padding="@dimen/common_10"
+                            android:text="调课课程"
+                            android:textColor="@color/jwgl_tv2_color"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <TextView
+                            android:id="@+id/teachingdesigndetails_dkkc_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.0"
+                            android:background="@color/white"
+                            android:text="模拟电路"
+                            android:padding="@dimen/common_10"
+                            android:textColor="@color/jwgl_tv3_color"
+                            android:textSize="@dimen/textSize_14" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/login_line_bg" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:padding="@dimen/common_10"
+                            android:text="调课星期"
+                            android:textColor="@color/jwgl_tv2_color"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <TextView
+                            android:id="@+id/teachingdesigndetails_dkxq_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.0"
+                            android:background="@color/white"
+                            android:text="星期一"
+                            android:padding="@dimen/common_10"
+                            android:textColor="@color/jwgl_tv3_color"
+                            android:textSize="@dimen/textSize_14" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/login_line_bg" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3.0"
+                            android:padding="@dimen/common_10"
+                            android:text="调课节次"
+                            android:textColor="@color/jwgl_tv2_color"
+                            android:textSize="@dimen/textSize_14" />
+
+                        <TextView
+                            android:id="@+id/teachingdesigndetails_dkjc_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="7.0"
+                            android:background="@color/white"
+                            android:text="第三节"
+                            android:padding="@dimen/common_10"
+                            android:textColor="@color/jwgl_tv3_color"
+                            android:textSize="@dimen/textSize_14" />
+                    </LinearLayout>
+                </LinearLayout>
+                    </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

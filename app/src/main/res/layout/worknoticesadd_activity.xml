@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp" >
+        <LinearLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal" >
+            <RelativeLayout
+                android:id="@+id/gamedetails_csdw_rel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                >
+                <TextView
+                    android:id="@+id/gamedetails_csdw_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全校公告"
+                    android:textSize="@dimen/textSize_14"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/bggg_details_title_color" />
+
+                <TextView
+                    android:id="@+id/gamedetails_csdwline_tv"
+                    android:layout_width="@dimen/common_40"
+                    android:layout_height="2.0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/bggg_bottomeline_color"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gamedetails_hddw_rel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                >
+                <TextView
+                    android:id="@+id/gamedetails_hddw_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="部门公告"
+                    android:textSize="@dimen/textSize_14"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/bggg_details_title2_color" />
+
+                <TextView
+                    android:id="@+id/gamedetails_hddwline_tv"
+                    android:layout_width="@dimen/common_40"
+                    android:layout_height="2.0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/bggg_bottomeline_color"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/login_line_bg"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/common_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_10"
+                android:text="公告标题"
+                android:textColor="@color/bggg_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <EditText
+                android:id="@+id/worknoticeadd_title_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="输入公告标题"
+                android:textColorHint="@color/bggg_details_content_color"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/bggg_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+            android:background="@color/login_line_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="@dimen/common_10"
+                android:text="发布时间"
+                android:textColor="@color/bggg_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:id="@+id/worknoticeadd_fbtime_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right|center_vertical"
+                android:hint="选择发布时间"
+                android:textColorHint="@color/bggg_details_content_color"
+                android:drawableRight="@mipmap/right_gary"
+                android:drawablePadding="@dimen/common_10"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/bggg_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:id="@+id/worknoticeadd_jg_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:id="@+id/worknoticeadd_jgxz_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:padding="@dimen/common_10"
+                    android:text="机构"
+                    android:textColor="@color/bggg_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="right|center_vertical"
+                    android:hint="选择机构"
+                    android:textColorHint="@color/bggg_details_content_color"
+                    android:drawableRight="@mipmap/right_gary"
+                    android:drawablePadding="@dimen/common_10"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/bggg_details_content_color"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_10"
+                android:layout_marginLeft="@dimen/common_20"
+                android:layout_marginRight="@dimen/common_20"
+                android:layout_marginBottom="@dimen/common_10"
+                android:background="@drawable/login_shape_editxt"
+                >
+                <com.htcompany.educationerpforgansu.commonpart.views.GDGridView
+                    android:id="@+id/worknoticeadd_bmmd_grd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="5"
+                    android:horizontalSpacing="@dimen/common_5"
+                    android:verticalSpacing="@dimen/common_5"
+                    ></com.htcompany.educationerpforgansu.commonpart.views.GDGridView>
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/common_10"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正文"
+            android:textColor="@color/bggg_details_biaoti_color"
+            android:textSize="@dimen/textSize_14"
+            android:padding="@dimen/common_10"
+            />
+        <EditText
+            android:id="@+id/worknoticeadd_cotent_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:hint="输入公告正文..."
+            android:textColorHint="@color/bggg_details_content_color"
+            android:background="@drawable/editext_border_shape"
+            android:layout_marginLeft="@dimen/common_10"
+            android:layout_marginRight="@dimen/common_10"
+            android:layout_marginBottom="@dimen/common_10"
+            android:lines="3"
+            android:gravity="top|left"
+            android:textColor="@color/bggg_details_content_color"
+            android:textSize="@dimen/textSize_14"
+            android:padding="@dimen/common_10"
+            />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

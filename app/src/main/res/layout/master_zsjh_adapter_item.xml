@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/masterzsjh_zy_tv"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_16"
+            android:textColor="@color/bgcl_titlecolor"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_20"
+            android:singleLine="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_10"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/common_10"
+                        android:paddingBottom="@dimen/common_10"
+                        android:text="计划招生人数:"
+                        android:textColor="#a2abb0"
+                        android:textSize="@dimen/textSize_14" />
+                    <TextView
+                        android:id="@+id/masterzsjh_jhzsrs_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/common_10"
+                        android:paddingBottom="@dimen/common_10"
+                        android:text="100"
+                        android:textColor="#f3941a"
+                        android:textSize="@dimen/textSize_14" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/common_30"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/common_10"
+                        android:paddingBottom="@dimen/common_10"
+                        android:text="层次:"
+                        android:textColor="#a2abb0"
+                        android:textSize="@dimen/textSize_14" />
+                    <TextView
+                        android:id="@+id/masterzsjh_cc_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/common_10"
+                        android:paddingBottom="@dimen/common_10"
+                        android:text="100"
+                        android:textColor="#f3941a"
+                        android:textSize="@dimen/textSize_14" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/common_10"
+                    android:paddingBottom="@dimen/common_10"
+                    android:text="实际招生人数:"
+                    android:textColor="#a2abb0"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/masterzsjh_sjzsrs_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/common_10"
+                    android:paddingBottom="@dimen/common_10"
+                    android:text="100"
+                    android:textColor="#f3941a"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

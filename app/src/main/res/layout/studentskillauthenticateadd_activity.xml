@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/common_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_10"
+                android:text="标题"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginLeft="@dimen/common_20"
+                android:hint="输入标题"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="@dimen/common_10"
+                android:text="鉴定日期"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right|center_vertical"
+                android:hint="选择鉴定日期"
+                android:drawableRight="@mipmap/right_gary"
+                android:drawablePadding="@dimen/common_5"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="@dimen/common_10"
+                android:text="鉴定证书类型"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right|center_vertical"
+                android:hint="选择鉴定证书类型"
+                android:drawableRight="@mipmap/right_gary"
+                android:drawablePadding="@dimen/common_5"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="@dimen/common_10"
+                android:text="工种"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="right"
+                android:hint="输入工种"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="@dimen/common_10"
+                android:text="等级"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="right"
+                android:hint="输入等级"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="@dimen/common_10"
+                android:text="鉴定费用"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/white"
+                android:gravity="right"
+                android:hint="输入鉴定费用"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="@dimen/common_10"
+                android:text="报名条件"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right|center_vertical"
+                android:hint="选择报名条件"
+                android:drawableRight="@mipmap/right_gary"
+                android:drawablePadding="@dimen/common_5"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="@dimen/common_10"
+                android:text="发布日期"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right|center_vertical"
+                android:hint="选择发布时间"
+                android:drawableRight="@mipmap/right_gary"
+                android:drawablePadding="@dimen/common_5"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="@dimen/common_10"
+                android:text="报名开始日期"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right|center_vertical"
+                android:hint="选择报名开始日期"
+                android:drawableRight="@mipmap/right_gary"
+                android:drawablePadding="@dimen/common_5"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:padding="@dimen/common_10"
+                android:text="报名结束日期"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="right|center_vertical"
+                android:hint="选择报名结束日期"
+                android:drawableRight="@mipmap/right_gary"
+                android:drawablePadding="@dimen/common_5"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_10"
+                android:text="评委"
+                android:textColor="@color/xsgl_details_biaoti_color"
+                android:textSize="@dimen/textSize_14" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editext_border_shape"
+                android:lines="3"
+                android:layout_margin="@dimen/common_10"
+                android:gravity="left|top"
+                android:hint="输入评委名称"
+                android:padding="@dimen/common_10"
+                android:textColor="@color/xsgl_details_content_color"
+                android:textColorHint="@color/xsgl_details_content_color"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

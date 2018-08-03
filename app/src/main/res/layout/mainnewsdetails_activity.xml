@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/news_photo_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_150"
+                android:layout_margin="@dimen/common_10"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:src="@mipmap/news_zwt_icon" />
+
+            <TextView
+                android:id="@+id/news_title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_10"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/textSize_22"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/news_fbr_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:textColor="#9D9D9D"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/news_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_15"
+                    android:padding="@dimen/common_10"
+                    android:textColor="#9D9D9D"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/news_content_wb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                />
+
+        </LinearLayout>
+</LinearLayout>

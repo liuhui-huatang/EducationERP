@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/noborder_white_shape"
+        android:layout_marginLeft="@dimen/common_10"
+        android:layout_marginRight="@dimen/common_10"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/recordadapter_kc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程：应用电子"
+                android:textColor="@color/ptjs_tv1_color"
+                android:padding="@dimen/common_15"
+                android:textSize="@dimen/textSize_14"
+                />
+
+            <TextView
+                android:id="@+id/recordadapter_jxb_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="教学班：应用电子0902"
+                android:textColor="@color/ptjs_tv1_color"
+                android:paddingLeft="@dimen/common_15"
+                android:paddingBottom="@dimen/common_15"
+                android:textSize="@dimen/textSize_14"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/recordadapter_time_tv"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="date：2015-06-12"
+            android:textColor="@color/ptjs_tv17_color"
+            android:padding="@dimen/common_15"
+            android:textSize="@dimen/textSize_12"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

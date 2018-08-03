@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="培训项目名称"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="输入培训项目名称"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="序号"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="输入序号"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="培训基地"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="输入培训基地名称"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="培训人数"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="输入培训人数"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="培训开始时间"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:hint="选择培训开始时间"
+            android:drawableRight="@mipmap/right_gary"
+            android:drawablePadding="@dimen/common_5"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="培训结束时间"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:hint="选择培训结束时间"
+            android:drawableRight="@mipmap/right_gary"
+            android:drawablePadding="@dimen/common_5"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="报名状态"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:hint="选择报名状态"
+            android:drawableRight="@mipmap/right_gary"
+            android:drawablePadding="@dimen/common_5"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="发证单位"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="输入发证单位"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="证书名称及级别"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="输入证书名称及级别"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/black2"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+</LinearLayout>

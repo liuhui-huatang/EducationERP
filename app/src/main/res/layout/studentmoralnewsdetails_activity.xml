@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="全体都到操场集合"
+            android:textSize="@dimen/textSize_16"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="@dimen/common_15"
+            android:textColor="@color/title_bar_color" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发布日期：2015-12-03"
+                android:textSize="@dimen/textSize_10"
+                android:gravity="center"
+                android:textColor="@color/black2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发布人：系统管理员"
+                android:textSize="@dimen/textSize_10"
+                android:layout_marginLeft="@dimen/common_10"
+                android:gravity="center"
+                android:textColor="@color/black2" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/login_line_bg"
+            android:layout_margin="@dimen/common_10"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="        全体都到操场集合，开表彰大会。全体都到操场集合，开表彰大会。全体都到操场集合，开表彰大会。全体都到操场集合，开表彰大会"
+            android:textSize="@dimen/textSize_14"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/black2" />
+    </LinearLayout>
+</LinearLayout>

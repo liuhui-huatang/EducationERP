@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+   <include
+       layout="@layout/common_title_bar"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/common_25"
+         android:orientation="vertical"
+         android:background="@mipmap/bzr_xqpy_icon1"
+         android:layout_margin="@dimen/common_15"
+         android:gravity="center"
+         >
+         <TextView
+             android:id="@+id/termremark_title_tv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="学期评语-李晓明"
+             android:textColor="@color/white"
+             android:textSize="@dimen/textSize_14"
+             />
+    </LinearLayout>
+        <TextView
+            android:id="@+id/termremark_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u3000\u3000该生能很好地遵守校规校纪，有较强的集体观念，担任学生干部能很好地完成各种任务。尊敬师长，团结同学。学习态度认真，能吃苦，有理想，上进心强，是个综合素质高的学生。"
+            android:textColor="@color/ptjs_tv35_color"
+            android:textSize="@dimen/textSize_14"
+            android:layout_marginLeft="@dimen/common_15"
+            android:layout_marginRight="@dimen/common_15"
+            android:lineSpacingMultiplier="1.2"
+            />
+    </LinearLayout>
+</LinearLayout>

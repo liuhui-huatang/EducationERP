@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择学期"
+        android:textSize="@dimen/textSize_14"
+        android:padding="@dimen/common_10"
+        android:textColor="@color/ptjs_tv16_color"
+        android:gravity="center"
+        android:background="@color/ptjs_tv8_color"
+        android:drawableRight="@mipmap/jwgl_right"
+        android:visibility="gone"
+        />
+    <com.htcompany.educationerpforgansu.commonpart.views.xListView.XListView
+        android:id="@+id/teachingrecord_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/activity_bg_color"
+        android:dividerHeight="@dimen/common_2"
+        android:layout_marginTop="@dimen/common_5"
+        />
+    <ImageView
+        android:id="@+id/teachingrecord_wsj_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/wushuju_bg"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+</LinearLayout>

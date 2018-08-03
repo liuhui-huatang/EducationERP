@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/common_60"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/common_10"
+            android:layout_marginLeft="@dimen/common_10"
+            android:layout_marginBottom="@dimen/common_10"
+            >
+            <com.htcompany.educationerpforgansu.commonpart.views.XCRoundAndOvalImageView
+                android:id="@+id/personnelfilesadapter_photo_img"
+                android:layout_width="@dimen/common_40"
+                android:layout_height="@dimen/common_40"
+                android:src="@mipmap/me_hredcokn"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:id="@+id/personnelfilesadapter_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/common_5"
+                android:text="李红红红"
+                android:singleLine="true"
+                android:textColor="@color/ssgl_tv11_color"
+                android:textSize="@dimen/textSize_14"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_30"
+            >
+
+            <TextView
+                android:id="@+id/personnelfilesadapter_adress_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_14"
+                android:textColor="@color/ssgl_tv11_color"
+                android:text="存放地：河北省人才"
+                android:padding="@dimen/common_10"
+                android:drawableLeft="@mipmap/rs_rsda_icon1"
+                android:drawablePadding="@dimen/common_10"
+                />
+            <TextView
+                android:id="@+id/personnelfilesadapter_code_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_14"
+                android:textColor="@color/ssgl_tv11_color"
+                android:text="档案号：20171245"
+                android:padding="@dimen/common_10"
+                android:drawableLeft="@mipmap/rs_rsda_icon2"
+                android:drawablePadding="@dimen/common_10"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

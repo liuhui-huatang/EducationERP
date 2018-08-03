@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\tools\EducationERP\easeui\AndroidManifest.xml:2:1-7:12
+INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml:2:1-7:12
+INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml:2:1-7:12
+	package
+		ADDED from E:\tools\EducationERP\easeui\AndroidManifest.xml:3:5-35
+		INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+		INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\tools\EducationERP\easeui\AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+		ADDED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+		INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+		ADDED from E:\tools\EducationERP\easeui\AndroidManifest.xml
+		INJECTED from E:\tools\EducationERP\easeui\AndroidManifest.xml

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="标题"
+                    android:textColor="@color/jwgl_tv2_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/waitfreedomworkflowdetails_title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="李看天"
+                    android:textColor="@color/jwgl_tv3_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="编号"
+                    android:textColor="@color/jwgl_tv2_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/waitfreedomworkflowdetails_code_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="李看天"
+                    android:textColor="@color/jwgl_tv3_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="内容"
+                    android:textColor="@color/jwgl_tv2_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/aitfreedomworkflowdetails_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="50dp"
+                    android:padding="@dimen/common_10"
+                    android:text="查看详情"
+                    android:textColor="@color/abc_search_url_text"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="发起人"
+                    android:textColor="@color/jwgl_tv2_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/waitfreedomworkflowdetails_fqr_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="1235411"
+                    android:textColor="@color/jwgl_tv3_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="发起时间"
+                    android:textColor="@color/jwgl_tv2_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/waitfreedomworkflowdetails_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="40"
+                    android:textColor="@color/jwgl_tv3_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="办理状态"
+                    android:textColor="@color/jwgl_tv2_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/waitfreedomworkflowdetails_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="40"
+                    android:textColor="@color/jwgl_tv3_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="工作流类型"
+                    android:textColor="@color/jwgl_tv2_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/waitfreedomworkflowdetails_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="40"
+                    android:textColor="@color/jwgl_tv3_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="下一步骤名称"
+                    android:textColor="@color/jwgl_tv2_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <EditText
+                    android:id="@+id/waitfreedomworkflowdetails_nextname_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:hint="输入下一步骤名称"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/jwgl_tv3_color"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="下一步骤办理人"
+                    android:textColor="@color/jwgl_tv2_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/waitfreedomworkflowdetails_nextperson_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="@dimen/common_5"
+                    android:drawableRight="@mipmap/right_gary"
+                    android:gravity="right|center_vertical"
+                    android:hint="选择下一步办理人"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/jwgl_tv3_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="办理意见"
+                    android:textColor="@color/jwgl_tv2_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <EditText
+                    android:id="@+id/waitfreedomworkflowdetails_blyj_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_10"
+                    android:background="@drawable/login_shape_editxt"
+                    android:gravity="top|left"
+                    android:hint="输入办理意见"
+                    android:lines="3"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/jwgl_tv3_color"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_50"
+                android:layout_marginTop="@dimen/common_10"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/waitfreedomworkflowdetails_tgnext_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@color/bghy_details_btnxzcolor"
+                    android:gravity="center"
+                    android:padding="@dimen/common_10"
+                    android:text="通过(进入下一步骤)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_12" />
+
+                <TextView
+                    android:id="@+id/waitfreedomworkflowdetails_tgover_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@color/bgtp_tv9color"
+                    android:gravity="center"
+                    android:padding="@dimen/common_10"
+                    android:text="通过(结束流程)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_12" />
+
+                <TextView
+                    android:id="@+id/waitfreedomworkflowdetails_btgover_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@color/bghy_details_btnmrcolor"
+                    android:gravity="center"
+                    android:padding="@dimen/common_10"
+                    android:text="不通过(结束流程)"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_12" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

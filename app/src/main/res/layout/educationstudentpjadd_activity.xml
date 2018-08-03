@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:text="评教学期"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/studentpjadd_pjxq_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="选择评教学期"
+            android:drawableRight="@mipmap/right_gary"
+            android:drawablePadding="@dimen/common_5"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv9_color"
+            android:textColorHint="@color/jwgl_tv9_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:text="问卷标题"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <EditText
+            android:id="@+id/studentpjadd_wjbt_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="输入问卷标题"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv9_color"
+            android:textColorHint="@color/jwgl_tv9_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/common_5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="评教开始时间"
+            android:drawableLeft="@mipmap/qj_icon_ty_green"
+            android:drawablePadding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/studentpjadd_starttime_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:hint="选择评教开始时间"
+            android:drawableRight="@mipmap/right_gary"
+            android:drawablePadding="@dimen/common_5"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv9_color"
+            android:textColorHint="@color/jwgl_tv9_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="评教结束时间"
+            android:drawableLeft="@mipmap/qj_icon_ty_red"
+            android:drawablePadding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/studentpjadd_endtime_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:hint="选择评教结束时间"
+            android:drawableRight="@mipmap/right_gary"
+            android:drawablePadding="@dimen/common_5"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv9_color"
+            android:textColorHint="@color/jwgl_tv9_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/common_5"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/studentpjadd_bjmd_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_10"
+                android:text="参评班级"
+                android:textColor="@color/jwgl_tv2_color"
+                android:textSize="@dimen/textSize_14"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_10"
+                android:layout_alignParentRight="true"
+                android:hint="选择参评班级"
+                android:drawableRight="@mipmap/me_icon5"
+                android:drawablePadding="@dimen/common_10"
+                android:gravity="center_vertical"
+                android:textColor="@color/jwgl_tv9_color"
+                android:textColorHint="@color/jwgl_tv9_color"
+                android:textSize="@dimen/textSize_14"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_marginRight="@dimen/common_20"
+            android:layout_marginBottom="@dimen/common_10"
+            android:background="@drawable/login_shape_editxt"
+            >
+            <com.htcompany.educationerpforgansu.commonpart.views.GDGridView
+                android:id="@+id/studentpjadd_bjmd_grd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:horizontalSpacing="@dimen/common_5"
+                android:verticalSpacing="@dimen/common_5"
+                ></com.htcompany.educationerpforgansu.commonpart.views.GDGridView>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="发证单位"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <EditText
+            android:id="@+id/studentpjadd_fzdw_edt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="输入发证单位"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv9_color"
+            android:textColorHint="@color/jwgl_tv9_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="证书名称及级别"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <EditText
+            android:id="@+id/studentpjadd_zsjbjmc_edt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="输入证书名称及级别"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv9_color"
+            android:textColorHint="@color/jwgl_tv9_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+</LinearLayout>

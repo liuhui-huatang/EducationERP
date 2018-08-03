@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+   <include
+       layout="@layout/commonselector_title_bar"
+       />
+   <FrameLayout
+       android:id="@+id/myplansummary_framgent"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+   </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,4 @@
+
+key:haoyi.jks
+key alias:com.huatang.haoyi
+password:haoyi123

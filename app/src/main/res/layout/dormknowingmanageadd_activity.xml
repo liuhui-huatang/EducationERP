@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+    <include layout="@layout/common_title_bar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="日期"
+            android:textColor="@color/xsgl_details_biaoti_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/dormkmadd_time_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawablePadding="@dimen/common_5"
+            android:drawableRight="@mipmap/right_gary"
+            android:gravity="right"
+            android:hint="选择日期"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/xsgl_details_content_color"
+            android:textColorHint="@color/xsgl_details_content_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="宿舍楼"
+            android:textColor="@color/xsgl_details_biaoti_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/dormkmadd_ssl_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawablePadding="@dimen/common_5"
+            android:drawableRight="@mipmap/right_gary"
+            android:gravity="right"
+            android:hint="选择宿舍楼"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/xsgl_details_content_color"
+            android:textColorHint="@color/xsgl_details_content_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="宿舍"
+            android:textColor="@color/xsgl_details_biaoti_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/dormkmadd_ss_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawablePadding="@dimen/common_5"
+            android:drawableRight="@mipmap/right_gary"
+            android:gravity="right"
+            android:hint="选择宿舍"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/xsgl_details_content_color"
+            android:textColorHint="@color/xsgl_details_content_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="学生"
+            android:textColor="@color/xsgl_details_biaoti_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/dormkmadd_student_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawablePadding="@dimen/common_5"
+            android:drawableRight="@mipmap/right_gary"
+            android:gravity="right"
+            android:hint="选择学生"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/xsgl_details_content_color"
+            android:textColorHint="@color/xsgl_details_content_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="缺勤类别"
+            android:textColor="@color/xsgl_details_biaoti_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/dormkmadd_qqlb_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawablePadding="@dimen/common_5"
+            android:drawableRight="@mipmap/right_gary"
+            android:gravity="right"
+            android:hint="选择缺勤类别"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/xsgl_details_content_color"
+            android:textColorHint="@color/xsgl_details_content_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="返回时间"
+            android:textColor="@color/xsgl_details_biaoti_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/dormkmadd_backtime_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawablePadding="@dimen/common_5"
+            android:drawableRight="@mipmap/right_gary"
+            android:gravity="right"
+            android:hint="选择返回时间"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/xsgl_details_content_color"
+            android:textColorHint="@color/xsgl_details_content_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:text="备注"
+            android:textColor="@color/xsgl_details_biaoti_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <EditText
+            android:id="@+id/dormkmadd_remark_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/editext_border_shape"
+            android:gravity="top|left"
+            android:hint="输入查寝人"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/xsgl_details_content_color"
+            android:textColorHint="@color/xsgl_details_content_color"
+            android:textSize="@dimen/textSize_14"
+            android:lines="3"
+            android:layout_margin="@dimen/common_10"
+            />
+    </LinearLayout>
+
+</LinearLayout>

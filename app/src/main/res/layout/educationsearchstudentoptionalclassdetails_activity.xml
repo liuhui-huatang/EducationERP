@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+  <include
+      layout="@layout/common_title_bar"
+      />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/common_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="教学班"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_jxbmc_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="15牧医05"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="班主任"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_bzrmc_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="王当"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="姓名"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_xsmc_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="李看天"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="学号"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_xsxh_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="03125436"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="课程"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_xxkc_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="AS动漫交互"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="选修课班级"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_xxkbj_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="CS001"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="志愿一"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_zyone_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="第二志愿"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="志愿二"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_zytwo_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="第二志愿"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="志愿三"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_zythree_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="第二志愿"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="志愿四"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_zyfour_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="第二志愿"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="志愿五"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_zyfive_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="第二志愿"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="报名方式"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_bmfs_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="本人报名"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:padding="@dimen/common_10"
+            android:text="报名时间"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/xxkxscx_bmsj_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.0"
+            android:text="2015-6-12 18:03"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+</LinearLayout>

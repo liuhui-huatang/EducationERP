@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="职工姓名"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="黎明"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="职工工号"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_code_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="0500302"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="证件类型"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_zjtype_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="身份证"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="证件号码"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_zjcode_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="1301321990120812257894"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="职工性别"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_sex_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="男"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="职工种族"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_mz_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="汉族"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                android:visibility="gone"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="职工状态"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_zzzt_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="在职"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="行政机构名称"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_xzjgmc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="电子教研组"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="行政岗位名称"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_xzgwmc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="电子教研组组长"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="出生日期"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_csrq_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="1990-12-07"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="血型"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_xx_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="A型"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="健康状况"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_jkzt_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="健康"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="婚姻状态"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_hyzt_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="已婚"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="政治面貌"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_zzmm_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="中共党员"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="籍贯"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_jg_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="河北石家庄"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="出生地"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_csd_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="北京天安门广场"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="户口所在地"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_hkszd_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="河北石家庄桥西区"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="户口类别"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_hklb_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="农业"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="当前住址"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_dqzz_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="石家庄桥西区省委大院"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="住址邮编"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_zzyb_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="031100"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="参加工作年月"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_cjgzny_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="2002年5月"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="从教年月"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_cjny_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="2002年5月"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="编制类别"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_bzlb_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="教学类"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                android:visibility="gone"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="教职工类别"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_jzglb_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="专任教师"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="岗位类别"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_gwlb_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="教育/培训"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="是否兼职教师"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_sfjzjs_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="否"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="是否双师型教师"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personmanaged_sfssxjs_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:text="否"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

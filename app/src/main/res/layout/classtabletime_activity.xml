@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <ScrollView
+        android:id="@+id/main_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="false"
+        >
+        <com.htcompany.educationerpforgansu.commonpart.views.TimeTableView
+            android:id="@+id/main_timetable_ly"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           android:orientation="vertical" >
+        </com.htcompany.educationerpforgansu.commonpart.views.TimeTableView>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_login_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_70"
+            android:visibility="gone"
+            android:src="@mipmap/login_logo_img" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_50"
+            android:layout_marginRight="@dimen/common_50"
+            android:layout_marginTop="@dimen/common_40"
+            android:background="@drawable/login_shape_btn"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="@dimen/common_10"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/common_10"
+                android:textColorHint="@color/white"
+                android:background="@mipmap/icon_user"
+                android:textSize="@dimen/textSize_14" />
+
+            <EditText
+                android:id="@+id/login_username_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:hint="请输入账号"
+                android:padding="@dimen/common_10"
+                android:singleLine="true"
+                android:textColorHint="#b8b8b8"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_50"
+            android:layout_marginRight="@dimen/common_50"
+            android:layout_marginTop="@dimen/common_20"
+            android:background="@drawable/login_shape_btn"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="@dimen/common_10"
+                android:singleLine="true"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/common_10"
+                android:textColorHint="@color/white"
+                android:background="@mipmap/icon_pwd"
+                android:textSize="@dimen/textSize_14" />
+
+            <EditText
+                android:id="@+id/login_pwd_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:hint="请输入密码"
+                android:padding="@dimen/common_10"
+                android:password="true"
+                android:singleLine="true"
+                android:textColorHint="#b8b8b8"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_50"
+            android:layout_marginRight="@dimen/common_50"
+            android:layout_marginTop="@dimen/common_20"
+            android:background="@mipmap/icon_login_btn"
+            android:gravity="center"
+            android:padding="@dimen/common_10"
+            android:text="登   录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="V0.0"
+        android:textColor="@color/white" />
+</RelativeLayout>

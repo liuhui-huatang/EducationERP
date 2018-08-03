@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/meetingdetails_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="里看天"
+        android:background="@color/bghy_details_rbgcolor"
+        android:padding="@dimen/common_5"
+        android:gravity="center"
+        android:textColor="@color/bghy_details_rztcolor"
+        android:textSize="@dimen/textSize_12"
+        />
+</LinearLayout>

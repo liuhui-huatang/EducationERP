@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color">
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_shape_btn"
+        android:drawableLeft="@mipmap/search_bar_icon_normal"
+        android:drawablePadding="@dimen/common_5"
+        android:layout_margin="@dimen/common_5"
+        android:hint="请输入图书名称"
+        android:textColorHint="@color/login_line_bg"
+        android:textColor="@color/black2"
+        android:textSize="@dimen/textSize_14"
+        android:padding="@dimen/common_5"
+        />
+</LinearLayout>

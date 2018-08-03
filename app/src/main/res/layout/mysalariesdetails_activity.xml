@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="姓名"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/mysalariesdetials_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:background="@color/login_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="发放时间"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/mysalariesdetials_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:background="@color/login_line_bg" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="工资卡号"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/mysalariesdetials_gzcode_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <com.htcompany.educationerpforgansu.commonpart.views.GDListView
+                android:id="@+id/salaryiesgd_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/activity_bg_color"
+                android:dividerHeight="@dimen/common_0.5" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_0.5"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="合计金额"
+                    android:textColor="@color/xsgl_details_bg1color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/mysalariesdetials_hjje_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/xsgl_details_bg1color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

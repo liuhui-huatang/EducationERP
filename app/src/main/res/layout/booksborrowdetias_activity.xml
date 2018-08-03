@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_150"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/common_10"
+        android:gravity="center_vertical"
+        >
+        <com.htcompany.educationerpforgansu.commonpart.views.XCRoundRectImageView
+            android:id="@+id/bookborrowdetails_photo_img"
+            android:layout_width="@dimen/common_90"
+            android:layout_height="@dimen/common_120"
+            android:src="@mipmap/bottombg_show_icon"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/common_10"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/common_10"
+            android:layout_marginBottom="@dimen/common_10"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_gravity="center_vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/bookborrowdetails_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/azbx_titlecolor"
+                    android:textSize="@dimen/textSize_16"
+                    android:text="dsf"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/bookborrowdetails_auther_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_12"
+                    android:textColor="#a6b7c2"
+                    android:paddingTop="@dimen/common_10"
+                    android:text="dsd"
+                    android:paddingBottom="@dimen/common_10"
+                    />
+                <TextView
+                    android:id="@+id/bookborrowdetails_type_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize_12"
+                    android:textColor="#a6b7c2"
+                    android:paddingTop="@dimen/common_10"
+                    android:text="ee"
+                    android:layout_marginRight="@dimen/common_30"
+                    />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/bookborrowdetails_postion_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#a6b7c2"
+                    android:textSize="@dimen/textSize_12"
+                    android:text="dssd"
+                    />
+                <TextView
+                    android:id="@+id/bookborrowdetails_jysj_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bgcl_tv2color"                    android:textSize="@dimen/textSize_12"
+                    android:paddingTop="@dimen/common_10"
+                    android:paddingBottom="@dimen/common_10"
+                    android:text="sdfs"
+                    android:layout_marginRight="@dimen/common_10"
+                    />
+                <TextView
+                    android:id="@+id/bookborrowdetails_ghsj_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/bgcl_tv2color"                    android:textSize="@dimen/textSize_12"
+                    android:layout_marginRight="@dimen/common_10"
+                    android:text="dsd"
+                    android:visibility="visible"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/common_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="编码"
+            android:textColor="@color/azbx_titlecolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/bookborrowdetails_code_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/zcbx_smaltextcolor"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="国际标准图书编码"
+            android:textColor="@color/azbx_titlecolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/bookborrowdetails_gjcode_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/zcbx_smaltextcolor"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="出版社"
+            android:textColor="@color/azbx_titlecolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/bookborrowdetails_cbs_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/zcbx_smaltextcolor"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="图书价格"
+            android:textColor="@color/azbx_titlecolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/bookborrowdetails_price_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/zcbx_smaltextcolor"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="合计数量"
+            android:textColor="@color/azbx_titlecolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/bookborrowdetails_allcount_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/zcbx_smaltextcolor"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="库存数量"
+            android:textColor="@color/azbx_titlecolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/bookborrowdetails_kccount_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/zcbx_smaltextcolor"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:padding="@dimen/common_10"
+            android:text="是否馆藏"
+            android:textColor="@color/azbx_titlecolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/bookborrowdetails_isgc_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="right"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/zcbx_smaltextcolor"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:text="备注"
+            android:textColor="@color/azbx_titlecolor"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/bookborrowdetails_remark_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:textColor="@color/zcbx_smaltextcolor"
+            android:textSize="@dimen/textSize_12" />
+    </LinearLayout>
+
+
+</LinearLayout>

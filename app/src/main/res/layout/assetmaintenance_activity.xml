@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+    <include
+    layout="@layout/common_title_bar"
+    />
+    <ListView
+        android:id="@+id/assetmanintenance_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/login_line_bg"
+        android:dividerHeight="0.5dp"
+
+        />
+    <ImageView
+        android:id="@+id/assemanintenance_wsj_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/wushuju_bg"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+</LinearLayout>

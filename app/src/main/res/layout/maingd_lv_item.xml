@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/common_30"
+        android:layout_marginRight="@dimen/common_30"
+        >
+        <TextView
+            android:id="@+id/mainlv_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去小明同学家做家访"
+            android:textColor="@color/work_tv3_color"
+            android:textSize="@dimen/textSize_12"
+            android:padding="@dimen/common_5"
+            />
+        <TextView
+            android:id="@+id/mainlv_time_tv"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-12-09"
+            android:textColor="@color/work_tv4_color"
+            android:textSize="@dimen/textSize_12"
+            android:padding="@dimen/common_5"
+            />
+    </RelativeLayout>
+</LinearLayout>

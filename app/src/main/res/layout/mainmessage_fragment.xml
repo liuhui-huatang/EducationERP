@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/commentitle_icon_bg"
+        >
+        <TextView
+            android:id="@+id/mainmessage_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_22" />
+    </LinearLayout>
+
+     <com.htcompany.educationerpforgansu.commonpart.views.xListView.XListView
+        android:id="@+id/mainmessage_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:divider="@color/activity_bg_color"
+         android:dividerHeight="@dimen/common_2"
+        />
+    <ImageView
+        android:id="@+id/mainmessage_wsj_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/wushuju_bg"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

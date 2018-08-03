@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0"
+            android:padding="@dimen/common_10"
+            android:text="评教学期"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.0"
+            android:background="@color/white"
+            android:padding="@dimen/common_10"
+            android:text="2016-2017第一学期"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0"
+            android:padding="@dimen/common_10"
+            android:text="问卷标题"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.0"
+            android:background="@color/white"
+            android:padding="@dimen/common_10"
+            android:text="看看老师教的怎么样"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:text="参评班级"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_10"
+            android:layout_marginLeft="@dimen/common_20"
+            android:layout_marginRight="@dimen/common_20"
+            android:background="@drawable/login_shape_editxt"
+            android:padding="@dimen/common_10">
+
+            <com.htcompany.educationerpforgansu.commonpart.views.GDGridView
+                android:id="@+id/studentpjdetails_bjmd_grd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="@dimen/common_5"
+                android:numColumns="4"
+                android:verticalSpacing="@dimen/common_5"></com.htcompany.educationerpforgansu.commonpart.views.GDGridView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_5"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0"
+            android:padding="@dimen/common_10"
+            android:text="评教开始时间"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.0"
+            android:background="@color/white"
+            android:padding="@dimen/common_10"
+            android:text="2016-12-03"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0"
+            android:padding="@dimen/common_10"
+            android:text="评教结束时间"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.0"
+            android:background="@color/white"
+            android:padding="@dimen/common_10"
+            android:text="2016-12-05"
+            android:textColor="@color/jwgl_tv3_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.0"
+            android:padding="@dimen/common_10"
+            android:text="状态"
+            android:textColor="@color/jwgl_tv2_color"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.0"
+            android:background="@color/white"
+            android:padding="@dimen/common_10"
+            android:text="已发布"
+            android:textColor="@color/jwgl_tv10_color"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_10"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/common_5"
+        app:cardElevation="@dimen/common_2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/common_15"
+                android:text="评教统计"
+                android:textColor="@color/jwgl_tv2_color"
+                android:textSize="@dimen/textSize_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/pjdetials_pjjl_rel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/common_10"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/common_40"
+                            android:layout_height="@dimen/common_40"
+                            android:src="@mipmap/jwgl_pjjl_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/common_5"
+                            android:text="学生评教记录"
+                            android:textColor="@color/jwgl_tv11_color"
+                            android:textSize="@dimen/textSize_12" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/common_10"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/common_40"
+                            android:layout_height="@dimen/common_40"
+                            android:src="@mipmap/jwgl_pjjldcb_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/common_5"
+                            android:text="调查表一"
+                            android:textColor="@color/jwgl_tv11_color"
+                            android:textSize="@dimen/textSize_12" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/common_10"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/common_40"
+                            android:layout_height="@dimen/common_40"
+                            android:src="@mipmap/jwgl_pjjldcb_icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/common_5"
+                            android:text="调查表二"
+                            android:textColor="@color/jwgl_tv11_color"
+                            android:textSize="@dimen/textSize_12" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

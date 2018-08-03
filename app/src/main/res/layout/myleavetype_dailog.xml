@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_shape_editxt"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请假类型"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:padding="@dimen/common_10"
+            android:background="@color/title_bar_color"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/title_bar_color" />
+        <ListView
+            android:id="@+id/myleavetype_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/view_line"
+            android:dividerHeight="@dimen/common_0.5"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

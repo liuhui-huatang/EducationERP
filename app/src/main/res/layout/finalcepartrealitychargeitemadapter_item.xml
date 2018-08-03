@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_20"
+        android:layout_marginRight="@dimen/common_20"
+        >
+        <TextView
+            android:id="@+id/finalcepartrealitychargeitemadapter_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="体检费一"
+            android:textSize="@dimen/textSize_14"
+            android:textColor="@color/ptjs_tv5_color"
+            android:padding="@dimen/common_10"
+            />
+        <TextView
+            android:id="@+id/finalcepartrealitychargeitemadapter_money_tv"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2500元"
+            android:textSize="@dimen/textSize_14"
+            android:textColor="@color/jwgl_tv3_color"
+            android:padding="@dimen/common_10"
+            />
+    </RelativeLayout>
+</LinearLayout>

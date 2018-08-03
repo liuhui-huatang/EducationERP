@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/sanaitationdetailn_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:text="房间类别"
+            android:textColor="@color/xsgl_details_biaoti_color"
+            android:textSize="@dimen/textSize_14"
+            />
+        <TextView
+            android:id="@+id/sanaitationdetailn_count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:text="公寓"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/ptjs_tv18_color"
+            android:textSize="@dimen/textSize_14"
+            />
+    </RelativeLayout>
+</LinearLayout>

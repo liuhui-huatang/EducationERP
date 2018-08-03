@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.htcompany.educationerpforgansu.commonpart.views.bannerview.AutoScrollViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="230dp"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:background="@mipmap/home_banyan">
+
+                    <LinearLayout
+                        android:id="@+id/main_dot_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@id/main_dot_ll"
+                        android:paddingBottom="@dimen/common_10"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/mainwork_waitb_rel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/common_10"
+                            android:layout_marginRight="@dimen/common_5"
+                            android:layout_weight="1"
+                            android:background="@mipmap/home_beij1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/common_10"
+                                android:paddingTop="@dimen/common_10"
+                                android:text="待办事项"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_14" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/common_10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="您有"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/textSize_10" />
+
+                                <TextView
+                                    android:id="@+id/main_dbsxcount_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#ffdc18"
+                                    android:textSize="@dimen/textSize_16"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="条未读消息"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/textSize_10" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/mainwork_shoolgg_rel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/common_5"
+                            android:layout_marginRight="@dimen/common_5"
+                            android:layout_weight="1"
+                            android:background="@mipmap/home_beij2"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/common_10"
+                                android:paddingTop="@dimen/common_10"
+                                android:text="全校公告"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_14" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/common_10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="您有"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/textSize_10" />
+
+                                <TextView
+                                    android:id="@+id/main_qxggcount_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#ffdc18"
+                                    android:textSize="@dimen/textSize_16"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="条未读消息"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/textSize_10" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/mainwork_partgg_rel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/common_5"
+                            android:layout_marginRight="@dimen/common_10"
+                            android:layout_weight="1"
+                            android:background="@mipmap/home_beij1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/common_10"
+                                android:paddingTop="@dimen/common_10"
+                                android:text="部门公告"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/textSize_14" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/common_10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="您有"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/textSize_10" />
+
+                                <TextView
+                                    android:id="@+id/main_bmggcount_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0"
+                                    android:textColor="#ffdc18"
+                                    android:textSize="@dimen/textSize_16"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="条未读消息"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/textSize_10" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 功能按钮部分 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.htcompany.educationerpforgansu.commonpart.views.GDGridView
+                    android:id="@+id/mainfunction_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/common_10"
+                    android:horizontalSpacing="@dimen/common_10"
+                    android:numColumns="4"
+                    android:verticalSpacing="@dimen/common_10"></com.htcompany.educationerpforgansu.commonpart.views.GDGridView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/activity_bg_color" />
+            <!-- 新闻列表界面 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+               <RelativeLayout
+                   android:id="@+id/main_newsmore_rel"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/white"
+                   >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="校园新闻"
+                    android:textSize="@dimen/textSize_16" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:padding="@dimen/common_10"
+                       android:text="更多"
+                       android:layout_alignParentRight="true"
+                       android:drawableRight="@mipmap/right_gary"
+                       android:drawablePadding="@dimen/common_10"
+                       android:textSize="@dimen/textSize_16" />
+               </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_0.5"
+                    android:background="@color/activity_bg_color" />
+
+                <com.htcompany.educationerpforgansu.commonpart.views.GDListView
+                    android:id="@+id/main_tennews_gl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_10"
+                    android:divider="@color/white"
+                    android:dividerHeight="@dimen/common_10" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

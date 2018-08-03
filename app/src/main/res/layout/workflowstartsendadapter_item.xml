@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/workflowsstartsendadapter_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作流名称"
+            android:textColor="@color/work_tv3_color"
+            android:textSize="@dimen/textSize_14"
+            android:padding="@dimen/common_15"
+            />
+        <TextView
+            android:id="@+id/workflowsstartsendadapter_type_tv"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类型"
+            android:textColor="@color/title_bar_color"
+            android:textSize="@dimen/textSize_12"
+            android:paddingRight="@dimen/common_15"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</LinearLayout>

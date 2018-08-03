@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.htcompany.educationerpforgansu.commonpart.views.XCRoundAndOvalImageView
+                android:id="@+id/leaveapplymanage_photo_img"
+                android:layout_width="@dimen/common_40"
+                android:layout_height="@dimen/common_40"
+                android:scaleType="fitXY"
+                android:src="@mipmap/defult_photo_icon" />
+
+            <TextView
+                android:id="@+id/leaveapplymanage_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_5"
+                android:text="李看天"
+                android:textColor="#6c7881"
+                android:singleLine="true"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/leaveapplymanage_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/qj_icon_type"
+                    android:drawablePadding="@dimen/common_10"
+                    android:padding="@dimen/common_10"
+                    android:text="李看天"
+                    android:textColor="#6c7881"
+                    android:textSize="@dimen/textSize_14" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/common_10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/leaveapplymanage_zt_img"
+                        android:layout_width="@dimen/common_15"
+                        android:layout_height="@dimen/common_15"
+                        android:layout_gravity="center_vertical"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/qj_togguo"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/leaveapplymanage_zt_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/common_10"
+                        android:text="通过"
+                        android:textColor="@color/qj_btncolor"
+                        android:textSize="@dimen/textSize_12" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/leaveapplymanage_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/qj_icon_timeqj"
+                    android:drawablePadding="@dimen/common_10"
+                    android:padding="@dimen/common_10"
+                    android:text="10-12至10-13"
+                    android:textColor="#6c7881"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

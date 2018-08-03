@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eaeff5"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.htcompany.educationerpforgansu.commonpart.views.XCRoundAndOvalImageView
+            android:id="@+id/classnamegrd_photo_img"
+            android:layout_width="@dimen/common_40"
+            android:layout_height="@dimen/common_40"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/common_10"
+            android:scaleType="fitXY"
+            android:src="@mipmap/defult_photo_icon" />
+        <TextView
+        android:id="@+id/classnamegridadapter_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_5"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:text="李看天"
+        android:textColor="@color/xsgl_tv1_color"
+        android:textSize="@dimen/textSize_12"
+        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/classnamegrdadapter_bj_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/common_10"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal"
+            android:text="李看天"
+            android:textColor="@color/xsgl_tv1_color"
+            android:textSize="@dimen/textSize_12"
+            android:paddingLeft="@dimen/common_5"
+            android:paddingRight="@dimen/common_5"
+             />
+    </LinearLayout>
+</LinearLayout>

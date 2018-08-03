@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/back"
+    android:background="@color/white" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    >
+    <TextView
+        android:id="@+id/showinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/common_10"
+        android:gravity="center"
+        android:text="版本更新"
+        android:textColor="@color/button_color"
+        android:textSize="@dimen/textSize_20" />
+
+    <TextView
+        android:id="@+id/fengge2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/showinfo"
+         android:layout_marginTop="@dimen/common_10"
+        android:background="@color/button_color" />
+
+    <RelativeLayout
+        android:id="@+id/timePicker1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fengge2"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/showcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:padding="@dimen/common_10"
+            android:text="1.添加了更快捷更适用的服务功能！ \n 2.修改了以前的bug！ \n 3.当程序发生异常退出情况时，会有相应提示"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_16" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fengge"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/timePicker1"
+        android:background="@color/button_color" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fengge"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_datetime_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/common_10"
+            android:paddingTop="@dimen/common_10"
+            android:text="  确  定   "
+            android:textColor="@color/button_color"
+            android:textSize="@dimen/textSize_20" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/button_color" />
+
+        <Button
+            android:id="@+id/btn_datetime_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/common_10"
+            android:paddingTop="@dimen/common_10"
+            android:text="  取  消   "
+            android:textColor="@color/button_color"
+            android:textSize="@dimen/textSize_20" />
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

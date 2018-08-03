@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <TextView
+        android:id="@+id/bzrkhhz_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择考核主题"
+        android:textSize="@dimen/textSize_14"
+        android:padding="@dimen/common_10"
+        android:textColor="@color/ptjs_tv16_color"
+        android:gravity="center"
+        android:background="@color/ptjs_tv8_color"
+        android:drawableRight="@mipmap/jwgl_right"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/activity_bg_color"
+        />
+    <ListView
+        android:id="@+id/bzrkhhz_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="@dimen/common_2"
+        android:divider="@color/activity_bg_color"
+        />
+    <ImageView
+        android:id="@+id/bzrkhhz_wsj_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/wushuju_bg"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+</LinearLayout>

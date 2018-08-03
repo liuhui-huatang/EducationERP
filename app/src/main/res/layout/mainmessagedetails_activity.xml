@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+    <TextView
+        android:id="@+id/mainmessaged_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_10"
+        android:text="编码"
+        android:gravity="center"
+        android:textColor="#4B556a"
+        android:textSize="@dimen/textSize_20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/mainmessaged_fjr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:text="编码"
+            android:gravity="center"
+            android:textColor="#9D9D9D"
+            android:textSize="@dimen/textSize_14" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="·"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:textColor="#9D9D9D"
+            android:textSize="@dimen/textSize_16" />
+        <TextView
+            android:id="@+id/mainmessaged_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_10"
+            android:text="编码"
+            android:gravity="center"
+            android:textColor="#0092EF"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/common_10"
+        android:layout_marginRight="@dimen/common_10"
+        android:background="@color/view_line"/>
+    <TextView
+        android:id="@+id/mainmessaged_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_10"
+        android:textColor="#6C6C6C"
+        android:textSize="@dimen/textSize_16" />
+</LinearLayout>

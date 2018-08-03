@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg_color"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    >
+    <include layout="@layout/common_title_bar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/czan_ll"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_10"
+                android:text="新签"
+                android:textColor="@color/title_bar_color"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_10"
+                android:text="续签"
+                android:textColor="@color/title_bar_color"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_14" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_10"
+                android:text="变更"
+                android:textColor="@color/title_bar_color"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/common_10"
+                android:text="终止"
+                android:textColor="@color/title_bar_color"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_14" />
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="职工姓名"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="职工号"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_code_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="机构"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_jg_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="岗位"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_gw_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_5"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="合同编号"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_htbh_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="合同起始日期"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_htstartrq_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="合同终止日期"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_htendrq_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="合同签订日期"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_htqdrq_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="合同状态"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_htstatus_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_5"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="续签次数"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_htxqcs_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="最近一次续签日期"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_zjycxqrq_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="合同终止原因"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_htzzreson_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="变更次数"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_bgcs_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="合同变更日期"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_bgtime_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="合同变更原因"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_bgresion_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line_bg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10"
+                    android:text="存放位置"
+                    android:textColor="@color/xsgl_details_biaoti_color"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/personcontratct_cfwz_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/common_10"
+                    android:textColor="@color/ptjs_tv18_color"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

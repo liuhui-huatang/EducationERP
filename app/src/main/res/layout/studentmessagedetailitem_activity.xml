@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_bg_color"
+    >
+    <include
+        layout="@layout/common_title_bar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_120"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.htcompany.educationerpforgansu.commonpart.views.XCRoundAndOvalImageView
+            android:id="@+id/studentmessagedetail_photo_img"
+            android:layout_width="@dimen/common_80"
+            android:layout_height="@dimen/common_80"
+            android:layout_margin="@dimen/common_10"
+            android:src="@mipmap/me_hredcokn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/studentmessagedetail_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/common_10"
+                android:text="李三"
+                android:textColor="@color/ptjs_tv11_color"
+                android:textSize="@dimen/textSize_16"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/studentmessagedetail_code_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:lines="2"
+                        android:paddingBottom="@dimen/common_5"
+                        android:paddingTop="@dimen/common_5"
+                        android:text="09024516"
+                        android:textColor="@color/ptjs_tv12_color"
+                        android:textSize="@dimen/textSize_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="学号"
+                        android:textColor="@color/ptjs_tv13_color"
+                        android:textSize="@dimen/textSize_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/studentmessagedetail_jxb_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="@dimen/common_5"
+                        android:paddingTop="@dimen/common_5"
+                        android:lines="2"
+                        android:textColor="@color/ptjs_tv12_color"
+                        android:textSize="@dimen/textSize_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="教学班"
+                        android:textColor="@color/ptjs_tv13_color"
+                        android:textSize="@dimen/textSize_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/studentmessagedetail_xzb_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="@dimen/common_5"
+                        android:paddingTop="@dimen/common_5"
+                        android:text="行政01"
+                        android:lines="2"
+                        android:textColor="@color/ptjs_tv12_color"
+                        android:textSize="@dimen/textSize_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="行政班"
+                        android:textColor="@color/ptjs_tv13_color"
+                        android:textSize="@dimen/textSize_12" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/login_line_bg"
+        android:layout_marginTop="@dimen/common_10"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/common_10"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="姓名"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="性别"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="专业"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/persioninfomation_name_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_sex_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_zy_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/common_10"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="学制"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="层次"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="年级"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/persioninfomation_xz_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_cc_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_nj_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/common_10"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="班级"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="学生联系电话"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="学号"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/persioninfomation_class_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_xsphone_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_xh_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/common_10"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="学籍号"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="出生日期"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:singleLine="true"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="民族"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/persioninfomation_xjh_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_csrq_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_mz_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/common_10"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="是否十万以下民族"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="血型"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="身份证件类型"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/persioninfomation_sfswyxmz_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_myxuexing_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_sfzjlx_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/common_10"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="身份证件号"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="健康状况"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="政治面貌"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/persioninfomation_sfzjcode_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_xsjkzk_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_xszzmm_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/common_10"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="是否流动人口"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:text="是否随迁子女"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv14_color"
+                    android:textSize="@dimen/textSize_12" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv13_color"
+                    android:textSize="@dimen/textSize_12" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/common_10"
+                >
+                <TextView
+                    android:id="@+id/persioninfomation_sfldrk_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/persioninfomation_sfsqzn_tv"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_30"
+                    android:singleLine="true"
+                    android:textColor="@color/ptjs_tv15_color"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
