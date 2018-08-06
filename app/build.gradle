@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 android {
+
     compileSdkVersion 23
     buildToolsVersion '26.0.2'
     useLibrary 'org.apache.http.legacy'
@@ -27,34 +28,36 @@ android {
 //            res.srcDirs = ['res']
 //            assets.srcDirs = ['assets']
 //            jniLibs.srcDirs = ['libs']
- //             androidTest.setRoot('tests')//androidTest 替换instrumentTest
+            //             androidTest.setRoot('tests')//androidTest 替换instrumentTest
 //            debug.setRoot('build-types/debug')
 //            release.setRoot('build-types/release')
+        }
+    }
+    signingConfigs {
+        release {
+            keyAlias 'com.huatang.haoyi'
+            keyPassword 'haoyi123'
+            storeFile file('E:/tools/EducationERP/app/haoyi.jks')
+            storePassword 'haoyi123'
         }
     }
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.release  //添加release签名
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-
-            applicationVariants.all { variant ->
-                variant.outputs.each { output ->
-                    def outputFile = outputFileName//outputFileName替换output.outputFile
-                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
-                        def fileName = "甘工职院_教职工_v${defaultConfig.versionName}.apk"
-// "孟职校园通_教职工_v${defaultConfig.versionName}.apk"
-                        outputFileName = new File(outputFile.parent, fileName)
+            android.applicationVariants.all { variant ->
+                variant.outputs.all { output ->
+                    def file = output.outputFile
+                    if (file != null && file.name.endsWith('.apk')) {
+                        outputFileName = "甘工职院_教职工_v${defaultConfig.versionName}.apk"
                     }
+
                 }
             }
 
-//            android.applicationVariants.all { variant ->
-//                variant.outputs.all {
-//                    outputFileName = "1hu_${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
-//                }
-//            }
-
         }
+
     }
     //解决v4包冲突
     configurations {

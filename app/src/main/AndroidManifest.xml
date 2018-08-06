@@ -6,7 +6,7 @@
         android:name=".commonpart.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/icon_meng"
-        android:label="甘工职院校园通"
+        android:label="掌上校园"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity

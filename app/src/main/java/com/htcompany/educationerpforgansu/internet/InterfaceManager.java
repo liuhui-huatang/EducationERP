@@ -12,7 +12,7 @@ public class InterfaceManager {
 
 //    public static final String siteURLIP = "http://1.203.80.74:8087/";//外网
 //    	public static final String siteURLIP="http://172.16.100.212:80/";//内网
-        public static final String siteURLIP="http://ecampus.gipc.edu.cn:8081";//内网
+        public static final String siteURLIP="http://ecampus.gipc.edu.cn:8081/";//内网
 
 
 //    		public static final String siteURLIP="http://192.168.1.173";//曹登物
