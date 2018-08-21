@@ -69,6 +69,7 @@ public class LoginPersoner {
                 sharedPrefUtil.putString("jpuid",jsonObject.getJSONObject("data").getString("jpuid"));
                 sharedPrefUtil.putString("zhiwei",jsonObject.getJSONObject("data").getString("station"));
                 sharedPrefUtil.putString("token",token);
+                sharedPrefUtil.putString("unkey", jsonObject.getJSONObject("data").getString("unkey"));
 //                if(!"1".equals(sharedPrefUtil.getString("jgbgsucess",""))){
                     setAlias(jsonObject.getJSONObject("data").getString("jpuid"));
 //                }

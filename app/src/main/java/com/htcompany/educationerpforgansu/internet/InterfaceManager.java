@@ -203,6 +203,8 @@ public class InterfaceManager {
     public static final String EXAMPART_PROJECT_LIST = "EXAMPART_PROJECT_LIST";//考试项目列表
     public static final String EXAMPART_STUDENTSEARCH_LIST = "EXAMPART_STUDENTSEARCH_LIST";//学生考试项目列表
     public static final String EXAMPART_JKTEACHERSEARCH_LIST = "EXAMPART_JKTEACHERSEARCH_LIST";//监考教师查询列表
+    public static final String MEETING_LIST = "MEETING_LIST";
+    public static final String SIGN_TOTAL_DATA = "SIGN_TOTAL_DATA";
 
     private static HashMap<String, String> urlManager = new HashMap<String, String>();
     private static InterfaceManager manager;
@@ -214,7 +216,7 @@ public class InterfaceManager {
 /**
  * 、、、、、、、、、、、、、、、、、登录模块、、、、、、、、、、、、、、、、、、、、、、、、、、、、、
  */
-            urlManager.put(InterfaceManager.lOGIN_LOGIN, siteURLIP + "/api/user/login");//登录
+            urlManager.put(InterfaceManager.lOGIN_LOGIN, siteURLIP + "/api/user/teacher/login");//登录
             /**
              * 、、、、、、、、、、、、、、、、、个人中心模块、、、、、、、、、、、、、、、、、、、、、、、、、、、、、
              */
@@ -415,6 +417,11 @@ public class InterfaceManager {
             urlManager.put(InterfaceManager.EXAMPART_PROJECT_LIST, siteURLIP + "/api/project/appList");//考试项目列表
             urlManager.put(InterfaceManager.EXAMPART_STUDENTSEARCH_LIST, siteURLIP + "/api/sdpk/appList");//学生考试项查询目列表
             urlManager.put(InterfaceManager.EXAMPART_JKTEACHERSEARCH_LIST, siteURLIP + "/api/jkxx/appList");//监考教师查询目列表
+
+
+
+            urlManager.put(InterfaceManager.MEETING_LIST, siteURLIP + "/api/qiandaoJiekouList");//会议列表
+            urlManager.put(InterfaceManager.SIGN_TOTAL_DATA, siteURLIP + "api/teacher/sign");//考勤统计
 
         }
         return manager;

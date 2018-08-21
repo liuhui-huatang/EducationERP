@@ -135,6 +135,24 @@ public class FunctionDatas {
 //        jxjh.setFunimg(R.mipmap.fuction_jxjh_icon);
 //        jxjh.setIsadd("0");
 //        jxjh.setIsdelete("0");
+        WorkFunctionEntity hylb = new WorkFunctionEntity();
+        hylb.setFunname("会议列表");
+        hylb.setFunflag(FunctionDatas.WORK_BGGL_HYLB);
+        hylb.setFunimg(R.mipmap.fuction_bggl_hygl_icon);
+        hylb.setIsadd("0");
+        hylb.setIsdelete("0");
+        hylb.setIsmain("0");
+        hylb.setIspermission("1");
+
+        WorkFunctionEntity kqtj = new WorkFunctionEntity();
+        kqtj.setFunname("考勤统计");
+        kqtj.setFunflag(FunctionDatas.WORK_BGGL_KQTJ);
+        kqtj.setFunimg(R.mipmap.fuction_bggl_hygl_icon);
+        kqtj.setIsadd("0");
+        kqtj.setIsdelete("0");
+        kqtj.setIsmain("0");
+        kqtj.setIspermission("1");
+
         WorkFunctionEntity jxsj = new WorkFunctionEntity();
         jxsj.setFunname("代课调课");
         jxsj.setFunflag(FunctionDatas.WORK_PTJS_JXSJ);
@@ -188,6 +206,8 @@ public class FunctionDatas {
         datas.add(jspx);
         datas.add(skjl);
         datas.add(jxkb);
+        datas.add(hylb);
+        datas.add(kqtj);
 //        datas.add(xxkbjhmc);
         datas.add(jxhd);
         return datas;
@@ -341,14 +361,14 @@ public class FunctionDatas {
      */
     public static ArrayList<WorkFunctionEntity> getJW_Datas() {
         ArrayList<WorkFunctionEntity> datas = new ArrayList<WorkFunctionEntity>();
-        WorkFunctionEntity xxkxscx = new WorkFunctionEntity();
+       /* WorkFunctionEntity xxkxscx = new WorkFunctionEntity();
         xxkxscx.setFunname("选修课管理");
         xxkxscx.setFunflag(FunctionDatas.WORK_JW_XXKXSCX);
         xxkxscx.setFunimg(R.mipmap.fuction_jwgl_xxkxscx_icon);
         xxkxscx.setIsadd("0");
         xxkxscx.setIsdelete("0");
         xxkxscx.setIsmain("0");
-        xxkxscx.setIspermission("1");
+        xxkxscx.setIspermission("1");*/
         WorkFunctionEntity bjcjhz = new WorkFunctionEntity();
         bjcjhz.setFunname("班级成绩汇总");
         bjcjhz.setFunflag(FunctionDatas.WORK_JW_BJCJHZ);
@@ -357,6 +377,7 @@ public class FunctionDatas {
         bjcjhz.setIsdelete("0");
         bjcjhz.setIsmain("0");
         bjcjhz.setIspermission("1");
+        /*
         WorkFunctionEntity qkcjcx = new WorkFunctionEntity();
         qkcjcx.setFunname("清考成绩查询");
         qkcjcx.setFunflag(FunctionDatas.WORK_JW_QKCJCX);
@@ -364,7 +385,7 @@ public class FunctionDatas {
         qkcjcx.setIsadd("0");
         qkcjcx.setIsdelete("0");
         qkcjcx.setIsmain("0");
-        qkcjcx.setIspermission("1");
+        qkcjcx.setIspermission("1");*/
         WorkFunctionEntity bkcjcx = new WorkFunctionEntity();
         bkcjcx.setFunname("补考成绩查询");
         bkcjcx.setFunflag(FunctionDatas.WORK_JW_BKCJCX);
@@ -405,9 +426,9 @@ public class FunctionDatas {
         jshdtj.setIsdelete("0");
         jshdtj.setIsmain("0");
         jshdtj.setIspermission("1");
-        datas.add(xxkxscx);
+        //datas.add(xxkxscx);
         datas.add(bjcjhz);
-        datas.add(qkcjcx);
+        //datas.add(qkcjcx);
         datas.add(bkcjcx);
         datas.add(jspxjhgl);
 //        datas.add(xspjgl);
@@ -613,6 +634,8 @@ public class FunctionDatas {
     public final static String WORK_BGGL_HYGL = "WORK_BGGL_HYGL";//会议管理
     public final static String WORK_BGGL_CLGL = "WORK_BGGL_CLGL";//车辆管理
     public final static String WORK_BGGL_TPGL = "WORK_BGGL_TPGL";//投票管理
+    public final static String WORK_BGGL_HYLB = "WORK_BGGL_HYLB";//会议列表
+    public final static String WORK_BGGL_KQTJ = "WORK_BGGL_KQTJ";//考勤统计
 
     /**
      * 办公初始化功能
@@ -645,6 +668,8 @@ public class FunctionDatas {
         clgl.setIsdelete("0");
         clgl.setIsmain("0");
         clgl.setIspermission("1");
+
+
 //        WorkFunctionEntity tpgl = new WorkFunctionEntity();
 //        tpgl.setFunname("投票管理");
 //        tpgl.setFunflag(FunctionDatas.WORK_BGGL_TPGL);

@@ -2,6 +2,8 @@ package com.htcompany.educationerpforgansu;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -28,6 +30,7 @@ import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.Callback;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Timer;
@@ -41,6 +44,9 @@ import okhttp3.Response;
  * Created by wrb on 2016/12/30.
  */
 public class MySignActivity extends BaseActivity implements View.OnClickListener {
+    private List<String> wifiList;
+    private String currentWifi;
+
     public static void startIntent(Activity activity) {
         Intent intent = new Intent(activity, MySignActivity.class);
         activity.startActivity(intent);
@@ -107,6 +113,8 @@ public class MySignActivity extends BaseActivity implements View.OnClickListener
 
 
     public void initDatas() {
+        wifiList = new ArrayList<>();
+        getConnectWifiSsid();
         getSign();
     }
 
@@ -118,10 +126,20 @@ public class MySignActivity extends BaseActivity implements View.OnClickListener
                 this.finish();
                 break;
             case R.id.bt_shang:
-                shangSign();
+                if(wifiList.contains(currentWifi)){
+                    shangSign();
+                }else{
+                    ToastUtil.showToast(this,"请连接到指定打卡的WIFI");
+                }
+
                 break;
             case R.id.bt_xia:
-                xiaSign();
+                if(wifiList.contains(currentWifi)){
+                    xiaSign();
+                }else{
+                    ToastUtil.showToast(this,"请连接到指定打卡的WIFI");
+                }
+
                 break;
         }
     }
@@ -243,7 +261,15 @@ public class MySignActivity extends BaseActivity implements View.OnClickListener
                 });
     }
 
-
+    private String getConnectWifiSsid(){
+        WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
+        WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+        Log.d("wifiInfo", wifiInfo.toString());
+        Log.d("SSID",wifiInfo.getSSID());
+        currentWifi = wifiInfo.getSSID();
+        currentWifi = currentWifi.replace("\"","").replace("\"","");
+        return wifiInfo.getSSID();
+    }
     public void getSign() {
 
         waitDialog = new WaitDialog(this, "");
@@ -278,6 +304,8 @@ public class MySignActivity extends BaseActivity implements View.OnClickListener
                         if ("0".equals(bean.getCode())) {
                             String dataJson = JsonUtils.getJsonStr(bean.getData(), "data");
                             String infoJson = JsonUtils.getJsonStr(bean.getData(), "info");
+                            String wifiJson = JsonUtils.getJsonStr(bean.getData(),"wifi");
+                            wifiList = JsonUtils.getListObject(wifiJson,String.class);
 
                             Glide.with(MySignActivity.this)
                                     .load(InterfaceManager.siteURLIP + JsonUtils.getJsonStr(infoJson, "image"))

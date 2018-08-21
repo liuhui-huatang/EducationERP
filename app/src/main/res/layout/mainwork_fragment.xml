@@ -221,7 +221,9 @@
                     android:layout_margin="@dimen/common_10"
                     android:horizontalSpacing="@dimen/common_10"
                     android:numColumns="4"
-                    android:verticalSpacing="@dimen/common_10"></com.htcompany.educationerpforgansu.commonpart.views.GDGridView>
+                    android:verticalSpacing="@dimen/common_10">
+
+                </com.htcompany.educationerpforgansu.commonpart.views.GDGridView>
             </LinearLayout>
 
             <TextView

@@ -27,6 +27,9 @@ import com.htcompany.educationerpforgansu.internet.login.LoginPersoner;
 import com.hyphenate.EMCallBack;
 import com.hyphenate.chat.EMClient;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.Set;
 
 import cn.jpush.android.api.JPushInterface;
@@ -149,7 +152,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                             Log.d("登录成功-->hxuser", sharedPrefUtil.getString("hxuser", ""));
                             Log.d("登录成功-->hxpassword", sharedPrefUtil.getString("hxpassword", ""));
 //                            setLogin(sharedPrefUtil.getString("hxuser",""),sharedPrefUtil.getString("hxpassword",""));
-
                             sharedPrefUtil.putString("loginname", login_username_edt.getText().toString());
                             sharedPrefUtil.putString("loginpwd", login_pwd_edt.getText().toString());
                             sharedPrefUtil.putString("islogin", "1");

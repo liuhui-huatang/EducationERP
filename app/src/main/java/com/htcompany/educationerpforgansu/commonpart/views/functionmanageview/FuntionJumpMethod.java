@@ -3,6 +3,9 @@ package com.htcompany.educationerpforgansu.commonpart.views.functionmanageview;
 import android.content.Context;
 import android.content.Intent;
 
+import com.htcompany.WebActivity;
+import com.htcompany.educationerpforgansu.MyWebActivity;
+import com.htcompany.educationerpforgansu.internet.InterfaceManager;
 import com.htcompany.educationerpforgansu.workpart.activitys.AssetMaintenanceActivity;
 import com.htcompany.educationerpforgansu.workpart.activitys.BeOnDutyActivity;
 import com.htcompany.educationerpforgansu.workpart.activitys.MainSchedulesActivity;
@@ -331,6 +334,13 @@ public class FuntionJumpMethod {
      }else if(FunctionDatas.WORK_MASTER_JYZKHHZ.equals(pageFlag)){
          //教研组考核汇总
          intent = new Intent(context, MasterJYZKHHZActivity.class);
+     }else if(FunctionDatas.WORK_BGGL_HYLB.equals(pageFlag)){
+         intent = new Intent(context,WebActivity.class);//会议列表
+         intent.putExtra("from",FunctionDatas.WORK_BGGL_HYLB);
+
+     }else if(FunctionDatas.WORK_BGGL_KQTJ.equals(pageFlag)){
+         intent = new Intent(context,WebActivity.class);//考勤管理
+         intent.putExtra("from",FunctionDatas.WORK_BGGL_KQTJ);
      }
       context.startActivity(intent);
   }

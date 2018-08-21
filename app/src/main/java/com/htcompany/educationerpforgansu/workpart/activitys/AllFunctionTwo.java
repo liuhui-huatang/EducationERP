@@ -75,7 +75,10 @@ public class AllFunctionTwo extends BaseActivity implements View.OnClickListener
         }
         if(downFunctionEntities!=null&&downFunctionEntities.size()>0){
             for(WorkFunctionEntity entity:downFunctionEntities){
-                    FunctionDatas.otherFunctionDatas.add(entity);
+                if(entity.getFunflag().equals(FunctionDatas.WORK_JW_XXKXSCX) || entity.getFunflag().equals(FunctionDatas.WORK_JW_QKCJCX)){
+                      continue;
+                }
+                FunctionDatas.otherFunctionDatas.add(entity);
             }
         }
 //        FunctionDatas.otherFunctionDatas.addAll(FunctionDatas.getJW_Datas());//教务数据源

@@ -48,6 +48,7 @@ import com.htcompany.educationerpforgansu.workpart.adapters.MainWorkFunctionGrid
 import com.htcompany.educationerpforgansu.workpart.adapters.MainWorkNewsAdapter;
 import com.htcompany.educationerpforgansu.workpart.commonworkpart.entity.WorkNoticeEntity;
 import com.htcompany.educationerpforgansu.workpart.entities.DYNewsEntity;
+import com.htcompany.educationerpforgansu.workpart.entities.FunctionDatas;
 import com.htcompany.educationerpforgansu.workpart.entities.WaitFlowEntity;
 import com.htcompany.educationerpforgansu.workpart.entities.WorkFunctionEntity;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -174,7 +175,10 @@ public class MainWorkFragment extends Fragment implements View.OnClickListener {
                 functionEntities.clear();
             }
             for (WorkFunctionEntity entity : datas) {
-                functionEntities.add(entity);
+                if(!entity.getFunflag().equals(FunctionDatas.WORK_GRBG_CARUSE)){
+                    functionEntities.add(entity);
+                }
+
             }
             int isQbFlag = 0;
             WorkFunctionEntity allFunciotnEntity = new WorkFunctionEntity();
